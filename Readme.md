@@ -6,7 +6,7 @@ This workshop provides step-by-step Foundry Local learning with a few lines of c
 1. [Getting started](./01_get_started.ipynb)
 2. [Run as web service (Integration)](./02_run_as_web_service.ipynb)
 3. [Integrate with Agent Framework](./03_agent_framework.ipynb)
-4. Transcribe audio (coming soon ...)
+4. [Transcribe audio (Speech-to-text)](./04_transcribe_audio.ipynb)
 5. Bring your own (BYO) models  (coming soon ...)
 
 All contents in this repository are experimented on Azure virtual machine with a single NVIDIA Tesla T4 GPU (NC4as T4 v3).
