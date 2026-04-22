@@ -5,7 +5,7 @@ This workshop provides step-by-step Foundry Local learning with a few lines of c
 
 1. [Getting started](./01_get_started.ipynb)
 2. [Run as web service (Integration)](./02_run_as_web_service.ipynb)
-3. [Integrate with Agent Framework (MCP Tools / Agent Skills★★？？？実験？？？★★)](./03_agent_framework.ipynb)
+3. [Integrate with Agent Framework](./03_agent_framework.ipynb)
 4. Transcribe audio (coming soon ...)
 5. Bring your own (BYO) models  (coming soon ...)
 
