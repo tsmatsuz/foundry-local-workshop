@@ -45,8 +45,8 @@ pip install olive-ai[auto-opt]
 Finally, clone this repository in your working environment as follows.
 
 ```
-git clone https://github.com/tsmatsuz/foundry-local-tutorials
-cd foundry-local-tutorials
+git clone https://github.com/tsmatsuz/foundry-local-workshop
+cd foundry-local-workshop
 ```
 
 > Note : You can also manage with **Foundry Local CLI**, which runs on top of SDK. Now Foundry Local CLI for Linux is, however, under construction.
