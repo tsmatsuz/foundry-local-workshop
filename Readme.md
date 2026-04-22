@@ -7,7 +7,7 @@ This workshop provides step-by-step Foundry Local learning with a few lines of c
 2. [Run as web service (Integration)](./02_run_as_web_service.ipynb)
 3. [Integrate with Agent Framework](./03_agent_framework.ipynb)
 4. [Transcribe audio (Speech-to-text)](./04_transcribe_audio.ipynb)
-5. Bring your own (BYO) models  (coming soon ...)
+5. Bring your own (BYO) models (coming soon ...)
 
 All contents in this repository are experimented on Azure virtual machine with a single NVIDIA Tesla T4 GPU (NC4as T4 v3).
 
@@ -36,10 +36,10 @@ For running Lesson 3, also install Agent Framework package as follows.
 pip install agent-framework
 ```
 
-For running Lesson 5, also install Olive package (which can convert models to ONNX format) as follows.
+For running Lesson 5, also install Olive package (which is used to convert models to ONNX format) as follows.
 
 ```
-pip install olive-ai[auto-opt]
+pip install olive-ai[auto-opt] onnxruntime
 ```
 
 Finally, clone this repository in your working environment as follows.
@@ -49,7 +49,7 @@ git clone https://github.com/tsmatsuz/foundry-local-workshop
 cd foundry-local-workshop
 ```
 
-> Note : You can also manage with **Foundry Local CLI**, which runs on top of SDK. Now Foundry Local CLI for Linux is, however, under construction.
+> Note : You can also use and manage with **Foundry Local CLI**, which runs on top of SDK. (Now Foundry Local CLI for Linux is, however, under construction.)
 
 ## Official document
 
