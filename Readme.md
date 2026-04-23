@@ -9,9 +9,9 @@ This workshop provides step-by-step Foundry Local learning with a few lines of c
 4. [Transcribe audio (Speech-to-text)](./04_transcribe_audio.ipynb)
 5. Bring your own (BYO) models (coming soon ...)
 
-All contents in this repository are experimented on Azure virtual machine with a single NVIDIA Tesla T4 GPU (NC4as T4 v3).
+All contents in this repository are experimented on Azure virtual machine with a single NVIDIA Tesla T4 GPU (NC4as T4 v3) and CUDA 12.8.1.
 
-> Note : Foundry Local is for **single user**. For multiple users, use other platforms - vLLM, Triton Inference Server, etc. (Foundry Local doesn't provide features optimized for multiple users - such as, continuous batching, paged attention, ...)
+> Note : Foundry Local is for **single user**. Use this platform for running your application on a single device. (For exposing to multiple users, use other platforms - vLLM, Triton Inference Server, etc. Foundry Local doesn't provide features optimized for multiple users - such as, continuous batching, paged attention, ...)
 
 ## Prerequisites
 
@@ -36,18 +36,14 @@ For running Lesson 3, also install Agent Framework package as follows.
 pip install agent-framework
 ```
 
-For running Lesson 5, also install Olive package (which is used to convert models to ONNX format) as follows.
-
-```
-pip install olive-ai[auto-opt] onnxruntime
-```
-
 Finally, clone this repository in your working environment as follows.
 
 ```
 git clone https://github.com/tsmatsuz/foundry-local-workshop
 cd foundry-local-workshop
 ```
+
+In Lesson 5, we also need additional settings (such as, installing ```olive-ai``` package, etc), but these are written in Lesson5 notebook.
 
 > Note : You can also use and manage with **Foundry Local CLI**, which runs on top of SDK. (Now Foundry Local CLI for Linux is, however, under construction.)
 
