@@ -7,15 +7,17 @@ This workshop provides step-by-step Foundry Local learning with a few lines of c
 2. [Run as web service (Integration)](./02_run_as_web_service.ipynb)
 3. [Integrate with Agent Framework](./03_agent_framework.ipynb)
 4. [Transcribe audio (Speech-to-text)](./04_transcribe_audio.ipynb)
-5. Bring your own (BYO) models (coming soon ...)
+5. [Bring your own (BYO) models](./05_byo_models.ipynb)
 
-All contents in this repository are experimented on Azure virtual machine with a single NVIDIA Tesla T4 GPU (NC4as T4 v3) and CUDA 12.8.1.
-
-> Note : Foundry Local is for **single user**. Use this platform for running your application on a single device. (For exposing to multiple users, use other platforms - vLLM, Triton Inference Server, etc. Foundry Local doesn't provide features optimized for multiple users - such as, continuous batching, paged attention, ...)
+> Note : Foundry Local is for **single user**. Use this platform for running your application on a single device. (For exposing to multiple users, use other platforms - vLLM, Triton Inference Server, etc. Foundry Local doesn't provide features optimized for multiple users - such as, continuous batching, paged attention, ...)<br>
+> Foundry Local powered by Azure Local brings models and agentic AI to customer-owned distributed infrastructure.
 
 ## Prerequisites
 
-The installation is pretty simple.<br>
+All contents in this repository are experimented on Azure virtual machine with a single NVIDIA Tesla T4 GPU (NC4as T4 v3) and CUDA 12.8.1.<br>
+You can use your own device and hardware acceleration (such as, ROCM, OpenVINO, Qualcomm, ...).
+
+The installation of Foundry Local is pretty simple.<br>
 Just install **Foundry Local SDK** for Python as follows. (This command will also install and setup ONNX runtime core and Foundry core.)
 
 <ins>For Windows</ins>
@@ -23,6 +25,8 @@ Just install **Foundry Local SDK** for Python as follows. (This command will als
 ```
 pip install foundry-local-sdk-winml openai
 ```
+
+> Note : On Windows, you should install/update **[Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)**. (When it's already installed, you don't need to do anything.)
 
 <ins>For cross-platform (MacOS / Linux)</ins>
 
@@ -43,9 +47,10 @@ git clone https://github.com/tsmatsuz/foundry-local-workshop
 cd foundry-local-workshop
 ```
 
-In Lesson 5, we also need additional settings (such as, installing ```olive-ai``` package, etc), but these are written in Lesson5 notebook.
+In Lesson 5, we also need additional setup (such as, installing ```onnxruntime-genai``` package, etc), but these are written in Lesson5 notebook.
 
-> Note : You can also use and manage with **Foundry Local CLI**, which runs on top of SDK. (Now Foundry Local CLI for Linux is, however, under construction.)
+> Note : You can also use and manage with **Foundry Local CLI**, which runs on top of SDK. (Now Foundry Local CLI for Linux is, however, under construction.)<br>
+> In this repository, we don't use Foundry Local CLI.
 
 ## Official document
 
