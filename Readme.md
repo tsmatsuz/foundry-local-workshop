@@ -7,10 +7,10 @@ This workshop provides step-by-step Foundry Local learning with a few lines of c
 2. [Run as web service (Integration)](./02_run_as_web_service.ipynb)
 3. [Integrate with Agent Framework](./03_agent_framework.ipynb)
 4. [Transcribe audio (Speech-to-text)](./04_transcribe_audio.ipynb)
-5. [Bring your own (BYO) models](./05_byo_models.ipynb)
+5. [Bring custom models](./05_byo_models.ipynb)
 
 > Note : Foundry Local is for **single user**. Use this platform for running your application on a single device. (For exposing to multiple users, use other platforms - vLLM, Triton Inference Server, etc. Foundry Local doesn't provide features optimized for multiple users - such as, continuous batching, paged attention, ...)<br>
-> Foundry Local powered by Azure Local brings models and agentic AI to customer-owned distributed infrastructure.
+> Foundry Local on Azure Local enables distributed deployments through Arc-enabled Kubernetes cluster on individual devices.
 
 ## Prerequisites
 
