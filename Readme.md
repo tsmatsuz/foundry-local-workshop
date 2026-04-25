@@ -1,7 +1,7 @@
 # Foundry Local workshop (Python)
 
-Foundry Local is quick experimentation and production platform for hardware optimized language model inferencing on device (on edge).<br>
-This workshop provides step-by-step Foundry Local learning with a few lines of code and background explanation for beginners.
+Foundry Local is a platform that provides hardware-optimized inferencing, enabling rapid experimentation and production on each device (edge).<br>
+The purpose of this workshop is to help you understand Foundry Local with a few lines of code and background explanations for beginners.
 
 1. [Getting started](./01_get_started.ipynb)
 2. [Run as web service (Integration)](./02_run_as_web_service.ipynb)
