@@ -1,7 +1,7 @@
 # Foundry Local workshop (Python)
 
-Foundry Local is a platform that provides hardware-optimized inferencing, enabling rapid experimentation and production on each device (edge).<br>
-The purpose of this workshop is to help you understand Foundry Local with a few lines of code and background explanations for beginners.
+Foundry Local is a platform to provide device-optimized inferencing, enabling rapid experimentation and production on each device (edge).<br>
+The goal of this workshop is to help beginners understand Foundry Local through a few lines of code, using background explanations and important notes.
 
 1. [Getting started](./01_get_started.ipynb)
 2. [Run as web service (Integration)](./02_run_as_web_service.ipynb)
@@ -10,12 +10,12 @@ The purpose of this workshop is to help you understand Foundry Local with a few 
 5. [Bring custom models](./05_byo_models.ipynb)
 
 > Note : Foundry Local is for **single user**. Use this platform for running your application on a single device. (For exposing to multiple users, use other platforms - vLLM, Triton Inference Server, etc. Foundry Local doesn't provide features optimized for multiple users - such as, continuous batching, paged attention, ...)<br>
-> Foundry Local on Azure Local enables distributed deployments through Arc-enabled Kubernetes cluster on individual devices.
+> Foundry Local on Azure Local enables distributed deployments on individual devices through Arc-enabled Kubernetes cluster.
 
 ## Prerequisites
 
 All contents in this repository are experimented on Azure virtual machine with a single NVIDIA Tesla T4 GPU (NC4as T4 v3) and CUDA 12.8.1.<br>
-You can use your own device and hardware acceleration (such as, ROCM, OpenVINO, Qualcomm, ...).
+You can use your own device and hardware acceleration - such as, ROCm, OpenVINO, Qualcomm, ...
 
 The installation of Foundry Local is pretty simple.<br>
 Just install **Foundry Local SDK** for Python as follows. (This command will also install and setup ONNX runtime core and Foundry core.)
@@ -47,14 +47,14 @@ git clone https://github.com/tsmatsuz/foundry-local-workshop
 cd foundry-local-workshop
 ```
 
-In Lesson 5, we also need additional setup (such as, installing ```onnxruntime-genai``` package, etc), but these are written in Lesson5 notebook.
+In Lesson 4 and Lesson 5, we also need additional setup (such as, installing ```onnxruntime-genai``` package, etc), but these are written in each notebook.
 
-> Note : You can also use and manage with **Foundry Local CLI**, which runs on top of SDK. (Now Foundry Local CLI for Linux is, however, under construction.)<br>
+> Note : You can also use and manage with **Foundry Local CLI**, which runs on top of SDK.<br>
 > In this repository, we don't use Foundry Local CLI.
 
 ## Official document
 
-The purpose of this repository is to learn with code and clear explanation (background) for beginners in each step.<br>
-In [official document](https://learn.microsoft.com/en-us/azure/foundry-local/), you can find tutorials and how-to guides for Foundry Local.
+The purpose of this repository is to learn Foundry Local with simple code and clear explanation (background) for beginners.<br>
+In [official document](https://learn.microsoft.com/en-us/azure/foundry-local/), you can find overall tutorials and how-to guides for Foundry Local.
 
 *Tsuyoshi Matsuzaki @ Microsoft Asia*
